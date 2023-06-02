@@ -37,7 +37,24 @@ end
 puts array2
 
 # 1. Write a method or function that removes all instances of the letter <strong>s</strong> in a string. The method or function should accept a string as an argument and return the same string with every instance of the letter <strong>s</strong> removed.
+
 # 1. Start with an array of hobbies. Print out only the words that end in "ing".
+
+#Print only the strings (all hobbies) in an array that end with ing.
+
+#First create an array with hobbies (all strings)
+#It would probably be easier to do this with an each do
+#I will need an include?("ing")
+
+hobbies = ["fish", "hiking", "biking", "eat"]
+hobbies_ing = []
+hobbies.each do |activity|
+    hobbies_ing << activity if activity.include?("ing")
+end
+
+puts hobbies_ing
+
+
 # 1. Start with an array of travel destinations. Print every travel destination in alphabetical order embedded in a sentence using string interpolation. For example, if the destination is "New York City", print something like "The next place I want to visit is New York City!" 
 # 1. Given a sentence with only lowercase letters, print the same sentence with the first letter of every word capitalized. For example, if you were given "Turing is the best", return "Turing Is The Best" instead!
 # 1. Write a method or function that determines how much a person will [pay in taxes in the United States](https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2022) based on their annual income. The method or function should accept a number representing the individual's annual income as an argument and return the amount they will owe in taxes for that year.
