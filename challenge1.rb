@@ -24,7 +24,17 @@ puts new_array
 # 1. Start with an array of strings with a mix of uppercase and lowercase letters. Print every word in all lowercase letters.
 
 # Turn every letter in an array with strings into a lowercase letter
-# 
+
+# I will need to create an array with strings
+# Next, I will need an each do command with another method (downcase maybe) to turn every letter into a lowercase letter
+#Finally print
+
+array2 = ["Elmer", "Honey", "AbCdE", "hey", "WOAH"]
+array2.each do |part|
+    part.downcase!
+end
+
+puts array2
 
 # 1. Write a method or function that removes all instances of the letter <strong>s</strong> in a string. The method or function should accept a string as an argument and return the same string with every instance of the letter <strong>s</strong> removed.
 # 1. Start with an array of hobbies. Print out only the words that end in "ing".
